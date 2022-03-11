@@ -1,0 +1,7 @@
+
+
+# Set tmux config
+cp ./.tmux.conf ~/.tmux.conf
+
+# Set GNOME keybindings
+./set_gnome_keybindings
