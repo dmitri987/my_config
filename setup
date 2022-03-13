@@ -1,7 +1,12 @@
 
 
 # Set tmux config
-cp ./.tmux.conf ~/.tmux.conf
+cp ./tmux.conf ~/.tmux.conf
 
 # Set GNOME keybindings
 ./set_gnome_keybindings
+
+
+# git options
+# git config --global user.email "shorop.d@gmail.com"
+# git config --global user.name "Dmytro Shorop"
