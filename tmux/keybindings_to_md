@@ -3,10 +3,15 @@
 BEGIN {
   print("### tmux keybindings");
   print("**Press `<Prefix>` key combination (`Ctrl+b`, by default) before each shortcut**");
+  print("<table>");
 }
 
 {
   if (/^bind/) {
-    printf("| %s | %s %s |\n", $2, $3, $4);
+    printf("<tr><td><kbd>%s</kbd></td><td>%s %s</td></tr>\n", $2, $3, $4);
   }
+}
+
+END {
+  print("</table>\n");
 }

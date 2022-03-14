@@ -9,7 +9,7 @@ echo '' > $README
 GNOME_DIR="$WORK_DIR/GNOME_keybindings"
 # cat $GNOME_DIR/README_API.md >> $README
 cat $GNOME_DIR/README.md >> $README
-
+cat $WORK_DIR/tmux/README.md >> $README
 cat $WORK_DIR/vimium_chrome_extension/README.md >> $README
 
 echo '

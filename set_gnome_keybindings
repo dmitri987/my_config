@@ -1,3 +1,0 @@
-#!/bin/bash
-# set custom keybindings for GNOME envirionment
-dconf load / < ./gnome_keybindings.ini

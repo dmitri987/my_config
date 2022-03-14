@@ -3,21 +3,29 @@
 BEGIN {
   FS = "=";
   print "### GNOME Keybindings";
+  print "<table>";
 }
 
 {
-  if ($0 ~ /^\[.+\]$/) {
-    printf("#### %s\n\n", $0);
-    next;
-  }
+#  if ($0 ~ /^\[.+\]$/) {
+#    printf("#### %s\n\n", $0);
+#    next;
+#  }
 
   if ($2 ~ /^\['.+'\]$/) {
-    keys = substr($2, 3, length($2)-4);
-    printf("| %s | %s |\n", keys, $1);
+    count = split(substr($2, 3, length($2)-4), keys, /[<>]+/);
+    key = "";
+    for (i = 1; i <= count; i++) {
+      if (keys[i] != "") {
+	key = key "<kbd>" keys[i] "</kbd>";
+      }
+    }
+    printf("<tr><td>%s</td><td>%s</td></tr>\n", key, $1);
     next;
   }
 }
 
 END {
+  print("</table>");
   print("");
 }
