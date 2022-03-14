@@ -1,11 +1,7 @@
 
-### GNOME Keybindings API
-`backup_gnome_keybindings` read current GNOME keybindings, save them to $GNOME_DIR/gnome_keybindings.ini and update README.md.
-`set_gnome_keybindings < {keybindings}` restore GNOME keybindings from a backup file. Used in `setup` script.
-
-
 ### GNOME Keybindings
 #### [org/gnome/desktop/wm/keybindings]
+
 |<Alt>r|begin-resize|
 |<Alt>q|close|
 |<Super>Escape|cycle-windows|
@@ -32,10 +28,13 @@
 |<Alt>f|toggle-fullscreen|
 |<Alt>j|unmaximize|
 #### [org/gnome/mutter/keybindings]
+
 |<Alt>h|toggle-tiled-left|
 |<Alt>l|toggle-tiled-right|
 #### [org/gnome/mutter/wayland/keybindings]
+
 #### [org/gnome/settings-daemon/plugins/media-keys]
+
 |<Primary><Alt>l|screensaver|
 |<Super>Return|terminal|
 
@@ -48,7 +47,7 @@
 
 
 
-## Tools
-### generate_readme
+### Tools
+#### generate_readme
 `generate_readme` create resulting README.md from READMEs of different parts.
 

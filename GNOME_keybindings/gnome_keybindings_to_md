@@ -7,7 +7,7 @@ BEGIN {
 
 {
   if ($0 ~ /^\[.+\]$/) {
-    printf("#### %s\n", $0);
+    printf("#### %s\n\n", $0);
     next;
   }
 

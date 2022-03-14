@@ -1,5 +1,6 @@
 ### GNOME Keybindings
 #### [org/gnome/desktop/wm/keybindings]
+
 |<Alt>r|begin-resize|
 |<Alt>q|close|
 |<Super>Escape|cycle-windows|
@@ -26,10 +27,13 @@
 |<Alt>f|toggle-fullscreen|
 |<Alt>j|unmaximize|
 #### [org/gnome/mutter/keybindings]
+
 |<Alt>h|toggle-tiled-left|
 |<Alt>l|toggle-tiled-right|
 #### [org/gnome/mutter/wayland/keybindings]
+
 #### [org/gnome/settings-daemon/plugins/media-keys]
+
 |<Primary><Alt>l|screensaver|
 |<Super>Return|terminal|
 

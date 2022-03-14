@@ -2,15 +2,9 @@
 
 WORK_DIR=$(dirname $0)
 
-# Set tmux config
 $WORK_DIR/tmux/restore
-# cp $WORK_DIR/tmux/tmux.conf ~/.tmux.conf
 
-# Restore GNOME keybindings
 $WORK_DIR/GNOME_keybindings/restore
-# GNOME_DIR=$WORK_DIR/GNOME_keybindings
-# $GNOME_DIR/set_gnome_keybindings < $GNOME_DIR/gnome_keybindings.ini
-
 
 # git options
 # git config --global user.email "shorop.d@gmail.com"
