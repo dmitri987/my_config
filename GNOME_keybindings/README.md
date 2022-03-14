@@ -1,9 +1,3 @@
-
-### GNOME Keybindings API
-`backup_gnome_keybindings` read current GNOME keybindings, save them to $GNOME_DIR/gnome_keybindings.ini and update README.md.
-`set_gnome_keybindings < {keybindings}` restore GNOME keybindings from a backup file. Used in `setup` script.
-
-
 ### GNOME Keybindings
 #### [org/gnome/desktop/wm/keybindings]
 |<Alt>r|begin-resize|
@@ -38,17 +32,4 @@
 #### [org/gnome/settings-daemon/plugins/media-keys]
 |<Primary><Alt>l|screensaver|
 |<Super>Return|terminal|
-
-### Vimium Chrome Extension
-[Web page](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en)
-
-1. Install Vimium Chrome Extension.
-2. On its setting page go ```Backup and Restore -> Restore -> select file 'vimium-options.json' from this dir```.
-
-
-
-
-## Tools
-### generate_readme
-`generate_readme` create resulting README.md from READMEs of different parts.
 

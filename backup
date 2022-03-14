@@ -1,0 +1,8 @@
+#!/bin/bash
+
+WORK_DIR=$(dirname $0);
+
+# GNOME keybindings
+$WORK_DIR/GNOME_keybindings/backup
+
+$WORK_DIR/tmux/backup

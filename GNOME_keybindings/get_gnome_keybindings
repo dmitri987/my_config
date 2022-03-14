@@ -1,0 +1,22 @@
+#!/bin/bash
+
+dconf dump / | awk ' 
+BEGIN { spaceCount = 0; }
+
+{
+  if ($0 ~ /^\[.*\]$/ || $0 == "") {
+    if ($0 ~ /key/) {
+      validKey = "true";
+      print($0); 
+    } else {
+      if (validKey == "true") print "";
+      validKey = "false";
+    }
+    next; 
+  } 
+
+  if (validKey == "true" && $0 != "") { 
+    print($0);
+  }  
+}'
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+WORK_DIR=$(dirname $0)
+
+$WORK_DIR/set_gnome_keybindings <$WORK_DIR/gnome_keybindings.ini

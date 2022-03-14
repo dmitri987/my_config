@@ -1,0 +1,7 @@
+# Backup GNOME keybindings
+
+WORK_DIR=$(dirname $0)
+
+INI_FILE="$WORK_DIR/gnome_keybindings.ini"
+$WORK_DIR/get_gnome_keybindings > $INI_FILE
+$WORK_DIR/gnome_keybindings_to_md <$INI_FILE >$WORK_DIR/README.md 

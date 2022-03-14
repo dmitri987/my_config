@@ -1,0 +1,12 @@
+#!/bin/awk -f
+
+BEGIN {
+  print("### tmux keybindings");
+  print("**Press `<Prefix>` key combination (`Ctrl+b`, by default) before each shortcut**");
+}
+
+{
+  if (/^bind/) {
+    printf("|%s|%s %s|\n", $2, $3, $4);
+  }
+}

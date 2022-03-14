@@ -1,0 +1,23 @@
+#!/bin/awk -f
+
+BEGIN {
+  FS = "=";
+  print "### GNOME Keybindings";
+}
+
+{
+  if ($0 ~ /^\[.+\]$/) {
+    printf("#### %s\n", $0);
+    next;
+  }
+
+  if ($2 ~ /^\['.+'\]$/) {
+    keys = substr($2, 3, length($2)-4);
+    printf("|%s|%s|\n", keys, $1);
+    next;
+  }
+}
+
+END {
+  print("");
+}

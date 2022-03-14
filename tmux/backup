@@ -1,0 +1,6 @@
+#!/bin/bash
+
+WORK_DIR=$(dirname $0);
+
+cp ~/.tmux.conf $WORK_DIR/tmux.conf
+$WORK_DIR/keybindings_to_md <$WORK_DIR/tmux.conf >README.md 
