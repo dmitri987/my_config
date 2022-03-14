@@ -7,6 +7,6 @@ BEGIN {
 
 {
   if (/^bind/) {
-    printf("|%s|%s %s|\n", $2, $3, $4);
+    printf("| %s | %s %s |\n", $2, $3, $4);
   }
 }
